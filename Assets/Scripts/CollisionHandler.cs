@@ -6,6 +6,16 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
 
+    [SerializeField] float delay = 3;
+    [SerializeField] AudioClip splosion;
+    [SerializeField] AudioClip finish;
+
+    AudioSource audioSource;
+
+    private void Start() 
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void OnCollisionEnter(Collision other) 
     {
         switch (other.gameObject.tag)
@@ -15,7 +25,7 @@ public class CollisionHandler : MonoBehaviour
                 break;
             
             case "Finish":
-                NextLevel();
+                StartFinishSequence();
                 break;
 
             case "Fuel":
@@ -23,9 +33,26 @@ public class CollisionHandler : MonoBehaviour
                 break;
 
             default:
-                ReloadLevel();
+                StartCrashSequence();
                 break;
         }
+    }
+
+    void StartCrashSequence()
+    { 
+        // add Particle effect
+        GetComponent<Playermovement>().enabled = false;
+        audioSource.PlayOneShot(splosion);
+        Invoke("ReloadLevel", delay);
+    }
+
+    void StartFinishSequence()
+    {
+        // add SFX
+        // add Particle effect
+        GetComponent<Playermovement>().enabled = false;
+        audioSource.PlayOneShot(finish);
+        Invoke("NextLevel", delay);
     }
 
     void ReloadLevel()
