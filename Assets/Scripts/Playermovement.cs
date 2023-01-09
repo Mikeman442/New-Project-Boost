@@ -1,22 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Playermovement : MonoBehaviour
 {
     [SerializeField] float mainThrust = 100;
     [SerializeField] float rotateSpeed = 100;
     [SerializeField] AudioClip mainEngineSound;
+    [SerializeField] ParticleSystem mainBoing;
+    [SerializeField] ParticleSystem moveLeft;
+    [SerializeField] ParticleSystem moveRight;
+
 
     Rigidbody rb;
     AudioSource audioSource;
+    CollisionHandler collisionHandlerRef;
+
 
 
     // Start is called before the first frame update
+
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        collisionHandlerRef = GetComponent<CollisionHandler>();
     }
 
     // Update is called once per frame
@@ -24,49 +34,70 @@ public class Playermovement : MonoBehaviour
     {
         ProcessThrust();
         ProcessRotate();
+        SkipLevelButton();
     }
 
 
     void ProcessThrust()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            CheckAudio();
-            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+            StartThrusting();
         }
-        else
+// Note: This code would be required for Input.GetKey method but is not required for Input.GetKeyDown        
+/*        else
         {
             audioSource.Stop();
+            mainBoing.Stop();
         }
-        
+*/
+    }
+
+    void StartThrusting()
+    {
+        audioSource.PlayOneShot(mainEngineSound);
+        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        mainBoing.Play();
     }
 
     void ProcessRotate()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            ApplyRotation(rotateSpeed);
+            RotateLeft();
         }
 
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            ApplyRotation(-rotateSpeed);
+            RotateRight();
         }
     }
 
-    private void ApplyRotation(float rotationThisFrame)
+    void RotateLeft()
+    {
+        ApplyRotation(rotateSpeed);
+        moveLeft.Play();
+    }
+
+    void RotateRight()
+    {
+        ApplyRotation(-rotateSpeed);
+        moveRight.Play();
+    }
+
+    void ApplyRotation(float rotationThisFrame)
     {
         rb.freezeRotation = true; // freezing rotation so physics doesnt bugger things up.
         transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
         rb.freezeRotation = false; // unfreezing rotation so physics can resume. 
     }
 
-    private void CheckAudio()
+    void SkipLevelButton()
     {
-        if (!audioSource.isPlaying)
+        if (Input.GetKey(KeyCode.L))
         {
-            audioSource.PlayOneShot(mainEngineSound);
+            collisionHandlerRef.NextLevel();
         }
-
     }
+
 } 

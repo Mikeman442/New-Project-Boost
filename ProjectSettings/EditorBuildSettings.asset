@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Plain Field.unity
     guid: f93ec5246a6082b45b5b3af4ba9e97b7
-  - enabled: 1
-    path: Assets/Scenes/Some Obstacles.unity
+  - enabled: 0
+    path: 
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Pillars.unity
+    guid: 7121699f68fd8a242b3fb5a164bde35c
+  - enabled: 1
+    path: Assets/Scenes/Verticle Pillars.unity
+    guid: 2f76782cefb7b0641aba18e6ec537378
+  - enabled: 1
+    path: Assets/Scenes/Moving Pillars.unity
+    guid: 7773e96ab1a56064d892853dac467d2c
   m_configObjects: {}
