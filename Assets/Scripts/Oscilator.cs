@@ -20,6 +20,7 @@ public class Oscilator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (period <= Mathf.Epsilon){ return; } // Mathf.Epsilon represents the smallest number a float can represent without being zero. 
         float cycles = Time.time / period; // continually growing over time. 
 
         const float tau = Mathf.PI * 2; // constant value of 6.283
@@ -29,5 +30,6 @@ public class Oscilator : MonoBehaviour
 
         Vector3 offset = movementVector * movementFactor;
         transform.position = startingPosition + offset;
+
     }
 }
