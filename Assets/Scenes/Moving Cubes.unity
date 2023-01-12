@@ -446,8 +446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -10, z: 0}
-  period: 3
+  movementVector: {x: 0, y: -5, z: 0}
+  period: 5
 --- !u!1 &243308519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -465,8 +465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -10, z: 0}
-  period: 3
+  movementVector: {x: 0, y: -5, z: 0}
+  period: 5
 --- !u!1001 &263780922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,8 +908,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: 0, z: 0}
-  period: 2
+  movementVector: {x: 0, y: 15, z: 0}
+  period: 5
 --- !u!1 &769434695 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -927,8 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -5, z: 0}
-  period: 3
+  movementVector: {x: 0, y: 5, z: 0}
+  period: 5
 --- !u!4 &798123260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022529433971372317, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: -15, z: 0}
-  period: 3
+  period: 5
 --- !u!4 &892024532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022529433971372317, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1156,8 +1156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -5, z: 0}
-  period: 3
+  movementVector: {x: 0, y: 5, z: 0}
+  period: 5
 --- !u!4 &1060963760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022529433971372317, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1180,8 +1180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -10, z: 0}
-  period: 3
+  movementVector: {x: 0, y: -5, z: 0}
+  period: 5
 --- !u!4 &1086798253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022529433971372317, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1266,8 +1266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -5, z: 0}
-  period: 3
+  movementVector: {x: 0, y: 5, z: 0}
+  period: 5
 --- !u!1 &1267954614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1285,8 +1285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -10, z: 0}
-  period: 3
+  movementVector: {x: 0, y: -5, z: 0}
+  period: 5
 --- !u!1001 &1288135055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1475,8 +1475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -10, z: 0}
-  period: 3
+  movementVector: {x: 0, y: -5, z: 0}
+  period: 5
 --- !u!1 &1353645141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1494,8 +1494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: 0, z: 0}
-  period: 2
+  movementVector: {x: 0, y: 15, z: 0}
+  period: 5
 --- !u!1 &1358820977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1513,8 +1513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -5, z: 0}
-  period: 3
+  movementVector: {x: 0, y: 5, z: 0}
+  period: 5
 --- !u!1001 &1369485697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: -15, z: 0}
-  period: 3
+  period: 5
 --- !u!1 &1566042543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -1760,8 +1760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -5, z: 0}
-  period: 3
+  movementVector: {x: 0, y: 5, z: 0}
+  period: 5
 --- !u!4 &1604014048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022529433971372317, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementVector: {x: 0, y: -15, z: 0}
-  period: 3
+  period: 5
 --- !u!1 &1987384388 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5831147643987661978, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}
@@ -2092,8 +2092,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de63c246892e2fe44a6541033ba5e89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementVector: {x: 0, y: -5, z: 0}
-  period: 3
+  movementVector: {x: 0, y: 5, z: 0}
+  period: 5
 --- !u!4 &2030365116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1022529433971372317, guid: e2e60c5d4f062d3418aa8936fd709ee3, type: 3}

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3100539475647704745}
   - component: {fileID: 3100539475647704750}
   - component: {fileID: 3100539475647704751}
-  - component: {fileID: 3100539475647704744}
   - component: {fileID: 3100539475647704747}
+  - component: {fileID: 8794833445819304710}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3100539475647704748}
-  m_LocalRotation: {x: 0.043618366, y: 0.0068961945, z: -0.00030109446, w: 0.99902445}
+  m_LocalRotation: {x: 0.043618366, y: 0.006896194, z: -0.00030109446, w: 0.9990244}
   m_LocalPosition: {x: -40.24648, y: 3.687361, z: -18.157587}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5, y: 0.791, z: 0}
 --- !u!20 &3100539475647704750
 Camera:
   m_ObjectHideFlags: 0
@@ -85,19 +85,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3100539475647704748}
   m_Enabled: 1
---- !u!114 &3100539475647704744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3100539475647704748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d6191366f983b14789240be13f7af40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frameRate: 60
 --- !u!114 &3100539475647704747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,3 +119,16 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8794833445819304710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3100539475647704748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6191366f983b14789240be13f7af40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 60
